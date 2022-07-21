@@ -1,20 +1,21 @@
 # Korean-Abusive-Language-Dataset
 
-각 데이터마다 컬럼이 달라서 두 개 만듦
-1. origin_*: 일반 데이터 번역하고 각기 다른 컬럼
-2. model_*: 모델에 돌리는 용 (총 5 컬럼: ['Dataset', 'Id', 'Context', 'Comment', 'Target']) ~ Target은 Abusive or Not임
+This is the abusive language datasets (AbuseEval, CADD, Davidson, Waseem) translated into Korean.
 
-***따라서 binary cls 모델에는 model_*.csv 파일 쓰면 됨
+We share two types for each dataset because each dataset has different columns.
+1. origin_*.csv: a Korean version of an original dataset (Preserve columns of the original datasets)
+2. model_*.csv: a dataset for training and testing a model (consisting of 5 columns: ['Dataset', 'Id', 'Context', 'Comment', 'Target']) ~ Target is the label, {abusive, not abusive}
+### If you want to train your model with original labels, use 'origin_*.csv' files.
+### If you want to train your model with {abusive, not abusive} labels, use 'model_*.csv' files.
+We explain how we adjust the labels (origin labels -> binary labels) in our paper (please see the reference below).
 
-===AbuseEval / CADD===
-origin_train, origin_valid, origin_test, model_train, model_valid, model_test
-다 있음
 
-===Davidson / Waseem ===
-셋으로 안 나뉘어져 있음. 필요시 나눠서 쓸 것.
-...희제가 7:1:2로 나눠서 씀
-...Davidson은 셔플 안 하고 나눴고
-...Waseem은 셔플(아마 seed=42)하고 중복제거 한 뒤에 7:1:2
+For AbuseEval and CADD, there are 'origin_{train, valid, test}.csv' and 'model_{train, valid, test}.csv'.
+
+For Davidson and Waseem, they are not divided into {train, valid, test} sets.
+You can split the data depending on the ratio you want, if you need to.
+In our paper, we set the ratio as 7(train):1(valid):2(test).
+For Waseem, we divided the data after shuffling it. 
 
 
 ### origin_* 에 대한 설명
@@ -31,3 +32,6 @@ Davidson = ['Dataset', 'Id', 'Context', 'Comment', 'Target', 'hate_speech', 'off
 
 #### 'Annotation'은 3 classes (sexism, racism, neither)
 Waseem = ['Dataset', 'Id', 'Context', 'Comment', 'Target', 'Annotation']
+
+
+# Reference
