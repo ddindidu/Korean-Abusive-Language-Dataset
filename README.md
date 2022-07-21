@@ -1,4 +1,4 @@
-# Korean-Abusive-Language-Dataset
+# Korean Abusive Language Dataset
 
 This is the abusive language datasets (AbuseEval, CADD, Davidson, Waseem) translated into Korean.
 
@@ -41,7 +41,7 @@ In our paper, we set the ratio as 7(train):1(valid):2(test).
 For Waseem, we divided the data after shuffling it. 
 
 
-# Reference
+# References
 Korean Abusive Language Dataset (Ours): 신지수, 송호윤, 이희제, 박종철. (2022). 기계번역을 활용한 한국어 언어폭력 데이터셋의 구축. 한국정보과학회 학술발표논문집. (Jisu Shin, Hoyun Song, Huije Lee, Jong C. Park, Constructing Korean Abusive Language Dataset using Machine Translation, Proceedings of the Korea Computer Congress, 2022.
 
 AbuseEval: I Feel Offended, Don’t Be Abusive! Implicit/Explicit Messages in Offensive and Abusive Language (Caselli et al., LREC 2020) (https://aclanthology.org/2020.lrec-1.760/), Predicting the Type and Target of Offensive Posts in Social Media (Zampieri et al., NAACL 2019) (https://aclanthology.org/N19-1144/)
