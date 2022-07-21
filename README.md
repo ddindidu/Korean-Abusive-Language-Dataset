@@ -6,14 +6,23 @@ We share two types for each dataset because each dataset has different columns.
 1. origin_*.csv: a Korean version of an original dataset (Preserve columns of the original datasets)
 > All datasets have following columns.
 >> 'Dataset': the name of dataset
+>> 
 >> 'Id'     : the Id of text data from the original dataset
+>> 
 >> 'Context': context texts; If there is no context text in original data, data is "".
+>> 
 >> 'Comment': texts to be classified
+>> 
 >> 'Target' : binary labels that we refined original labels in our work {abusive (1), not abusive (0)}
+>> 
 >> their original labels: refer their papers
+>
 > AbuseEval = ['Dataset', 'Id', 'Context', 'Comment', 'Target', 'abuse']
+> 
 > CADD = ['Dataset', 'Id', 'Context', 'Comment', 'Target', 'L.Type', 'L.Abusive', 'lAttack', 'L.Dem', 'L.Implicit', 'L.Profanity', 'lenComment', 'lenContext']
+> 
 > Davidson = ['Dataset', 'Id', 'Context', 'Comment', 'Target', 'hate_speech', 'offensive_language', 'neither', 'class']
+> 
 > Waseem = ['Dataset', 'Id', 'Context', 'Comment', 'Target', 'Annotation']
 
 2. model_*.csv: a dataset for training and testing a model
