@@ -1,9 +1,30 @@
-# Korean Abusive Language Dataset
+Korean Abusive Language Dataset
+===============================
 
-This is the abusive language datasets (AbuseEval, CADD, Davidson, Waseem) translated into Korean.
+This is the abusive language datasets (AbuseEval, CADD, Davidson, Waseem) translated into Korean.   
+*keyword: abusive language, hate speech, offensive language, reddit, social media, korean dataset*
 
-We share two types for each dataset because each dataset has different columns.
-1. origin_*.csv: a Korean version of an original dataset (Preserve columns of the original datasets)
+For 4 benchmark datasets for abusive language detection, we translated and share them into Korean (You can access their papers through the references below.) .    
+* AbuseEval (Caselli et al., 2020)   
+* CADD (Song et al., 2021)   
+* Davidson et al. (2017)   
+* Waseem and Hovy (2016)   
+ 
+
+We share **two types** for each dataset because each dataset has different columns.   
+## 1. origin_*.csv
+> This is a Korean version of an original dataset (Preserve columns of the original datasets)
+> Here are the columns of datasets.
+
+> * AbuseEval = {'Dataset', 'Id', 'Context', 'Comment', 'Target', 'abuse'}
+> 
+> * CADD = {'Dataset', 'Id', 'Context', 'Comment', 'Target', 'L.Type', 'L.Abusive', 'lAttack', 'L.Dem', 'L.Implicit', 'L.Profanity', 'lenComment', 'lenContext'}
+> 
+> * Davidson = {'Dataset', 'Id', 'Context', 'Comment', 'Target', 'hate_speech', 'offensive_language', 'neither', 'class'}
+> 
+> * Waseem = {'Dataset', 'Id', 'Context', 'Comment', 'Target', 'Annotation'}
+>
+> ### Details
 > All datasets have following columns.
 >> 'Dataset': the name of dataset
 >> 
@@ -17,15 +38,10 @@ We share two types for each dataset because each dataset has different columns.
 >> 
 >> their original labels: refer their papers
 >
-> AbuseEval = ['Dataset', 'Id', 'Context', 'Comment', 'Target', 'abuse']
-> 
-> CADD = ['Dataset', 'Id', 'Context', 'Comment', 'Target', 'L.Type', 'L.Abusive', 'lAttack', 'L.Dem', 'L.Implicit', 'L.Profanity', 'lenComment', 'lenContext']
-> 
-> Davidson = ['Dataset', 'Id', 'Context', 'Comment', 'Target', 'hate_speech', 'offensive_language', 'neither', 'class']
-> 
-> Waseem = ['Dataset', 'Id', 'Context', 'Comment', 'Target', 'Annotation']
 
-2. model_*.csv: a dataset for training and testing a model
+
+## 2. model_*.csv
+> a dataset for training and testing a model
 > (consisting of 5 columns: ['Dataset', 'Id', 'Context', 'Comment', 'Target'])
 
 #### If you want to train your model with original labels, use 'origin_*.csv' files.
@@ -41,7 +57,8 @@ In our paper, we set the ratio as 7(train):1(valid):2(test).
 For Waseem, we divided the data after shuffling it. 
 
 
-# References
+References
+==========
 Korean Abusive Language Dataset (Ours): 신지수, 송호윤, 이희제, 박종철. (2022). 기계번역을 활용한 한국어 언어폭력 데이터셋의 구축. 한국정보과학회 학술발표논문집. (Jisu Shin, Hoyun Song, Huije Lee, Jong C. Park, Constructing Korean Abusive Language Dataset using Machine Translation, Proceedings of the Korea Computer Congress, 2022.
 
 AbuseEval: I Feel Offended, Don’t Be Abusive! Implicit/Explicit Messages in Offensive and Abusive Language (Caselli et al., LREC 2020) (https://aclanthology.org/2020.lrec-1.760/), Predicting the Type and Target of Offensive Posts in Social Media (Zampieri et al., NAACL 2019) (https://aclanthology.org/N19-1144/)
