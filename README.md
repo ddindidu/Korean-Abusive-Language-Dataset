@@ -11,11 +11,12 @@ For 4 benchmark datasets for abusive language detection, we translated and share
 * Waseem and Hovy (2016)   
  
 
-We share **two types** for each dataset because each dataset has different columns.   
+The datasets have different formats, so we unified the data columns.     
+We share **two types** for each dataset because each dataset has different columns. The description is below.    
 ## 1. origin_*.csv
-> This is a Korean version of an original dataset (Preserve columns of the original datasets)
-> Here are the columns of datasets.
-
+> This is a Korean version of an original dataset. It preserves columns of the original datasets.
+> 
+> ### Here are the columns of datasets.
 > * AbuseEval = {'Dataset', 'Id', 'Context', 'Comment', 'Target', 'abuse'}
 > 
 > * CADD = {'Dataset', 'Id', 'Context', 'Comment', 'Target', 'L.Type', 'L.Abusive', 'lAttack', 'L.Dem', 'L.Implicit', 'L.Profanity', 'lenComment', 'lenContext'}
@@ -26,17 +27,17 @@ We share **two types** for each dataset because each dataset has different colum
 >
 > ### Details
 > All datasets have following columns.
->> 'Dataset': the name of dataset
->> 
->> 'Id'     : the Id of text data from the original dataset
->> 
->> 'Context': context texts; If there is no context text in original data, data is "".
->> 
->> 'Comment': texts to be classified
->> 
->> 'Target' : binary labels that we refined original labels in our work {abusive (1), not abusive (0)}
->> 
->> their original labels: refer their papers
+> * 'Dataset': the name of dataset
+> 
+> * 'Id'     : the Id of text data from the original dataset
+> 
+> * 'Context': context texts; If there is no context text in original data, data is "".
+>
+> * 'Comment': texts to be classified
+>
+> * 'Target' : binary labels that we refined original labels in our work {abusive (1), not abusive (0)}
+>
+> their original labels: refer their papers
 >
 
 
