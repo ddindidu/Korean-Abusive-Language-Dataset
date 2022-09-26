@@ -45,17 +45,18 @@ We share **two types** for each dataset because each dataset has different colum
 > consisting of only 5 columns {'Dataset', 'Id', 'Context', 'Comment', 'Target'}
 
 
-## Brief Tips
-#### If you want to train your model with original labels, use 'origin_*.csv' files.
-#### If you want to train your model with {abusive, not abusive} labels, use 'model_*.csv' files.
+## Brief Tips🤗
+### 1. Which file should I use?
+#### If you want to train your model with *original labels*, use 'origin_*.csv' files.
+#### If you want to train your model with *{abusive, not abusive} labels*, use 'model_*.csv' files.
 We explain how we adjust the labels (origin labels -> binary labels) in our paper (please see the reference below).
 
+### 2. How is the data divided (train / test)?
+* For AbuseEval and CADD, there are 'origin_{train, valid, test}.csv' and 'model_{train, valid, test}.csv'.
 
-For AbuseEval and CADD, there are 'origin_{train, valid, test}.csv' and 'model_{train, valid, test}.csv'.
-
-For Davidson and Waseem, they are not divided into {train, valid, test} sets.
-You can split the data depending on the ratio you want, if you need to.
-In our paper, we set the ratio as 7(train):1(valid):2(test).
+* For Davidson and Waseem, they are not divided into {train, valid, test} sets in the original papers.   
+You can split the data depending on the ratio you want, if you need to.   
+In our paper, we set the ratio as 7(train):1(valid):2(test).   
 For Waseem, we divided the data after shuffling it. 
 
 
