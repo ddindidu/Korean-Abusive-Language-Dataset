@@ -1,4 +1,4 @@
-Korean Abusive Language Dataset<br> | 한국어 언어폭력 혐오표현 데이터셋
+Korean Abusive Language Dataset | 한국어 언어폭력 혐오표현 데이터셋
 ===============================
 
 This is the abusive language datasets (AbuseEval, CADD, Davidson, Waseem) translated into Korean.   
