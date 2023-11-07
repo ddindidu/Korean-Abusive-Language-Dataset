@@ -63,9 +63,19 @@ For Waseem, we divided the data after shuffling it.
 
 References
 ==========
-* Korean Abusive Language Dataset (Ours)   
-    - Kor: 신지수, 송호윤, 이희제, 박종철. (2022). [기계번역을 활용한 한국어 언어폭력 데이터셋의 구축](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113351). 한국정보과학회 학술발표논문집.   
-    - Eng: Jisu Shin, Hoyun Song, Huije Lee, Jong C. Park, Constructing Korean Abusive Language Dataset using Machine Translation, Proceedings of the Korea Computer Congress, 2022.
+* Korean Abusive Language Dataset (Ours)
+  ```
+  # Kor
+  신지수, 송호윤, 이희제, 박종철. (2022). [기계번역을 활용한 한국어 언어폭력 데이터셋의 구축](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11113351). 한국정보과학회 학술발표논문집.   
+
+  # Eng
+  @inproceedings{shin2022constructing,
+   title = {Constructing Korean Abusive Language Dataset using Machine Translation},
+   author = {Shin, Jisu and Song, Hoyun and Lee, Huije and Park, Jong C. Park},
+   booktitle = {Proceedings of the Korea Computer Congress},
+   year = {2022}
+  }
+  ```
 
 * AbuseEval   
     - [I Feel Offended, Don’t Be Abusive! Implicit/Explicit Messages in Offensive and Abusive Language](https://aclanthology.org/2020.lrec-1.760) (Caselli et al., LREC 2020)
